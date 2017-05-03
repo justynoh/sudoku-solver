@@ -1,0 +1,90 @@
+                               15112 Term Project
+                                   Timesheet
+
+————————————————————————————————————————————————————————————————————————————————
+
+Thursday April 6 2017 
+1630-2030: Worked on initial trial of detecting fencers, tested the 
+           Tensorflow neural network on the collected data.
+
+Sunday April 9 2017
+2200-2359: Worked on creating CNN and ran on data of the fencer-detection 
+           problem.
+
+Thursday April 13 2017
+2100-2300: Worked on getting more negative training data.
+
+Friday April 14 2017
+1600-1900: Tested opencv thresholding and edge detection for CNN, ran CNN on 
+           fencer detection problem. 
+2000-2200: Worked on creating bounding-boxes application on Tkinter for 
+           automating writing bounding box coordinates to csv file.
+2200-2359: Did research on getting Tensorflow to read csv files and doing 
+           learning on bounding box problems.
+
+Saturday April 15 2017
+1500-1900: Tagged images with bounding boxes.
+2000-0000: Tagged images with bounding boxes.
+
+Sunday April 16 2017
+1530-1830: Worked on bounding box CNN to customize input data to fit csv 
+           form.
+2000-2359: Worked on bounding box CNN, trying to get the input pipeline to take 
+           image names.
+
+Monday April 17 2017
+0000-0200: Worked on bounding box CNN, trying to get the input pipeline to take 
+           csv values.
+1500-2359: Moved on to puzzle-solver idea. Worked on Sudoku solver and using 
+           opencv to detect sudoku puzzles.
+
+Tuesday April 18 2017
+0000-0130: Worked on using opencv to detect Sudoku grids, proposal and 
+           competitive analysis.
+1500-1630: Worked on storyboarding and improving opencv algorithm.
+
+Wednesday April 19 2017
+1500-1730: Worked on grid detection for Sudoku puzzle.
+2100-2359: Worked on user interface for application (modes 0, 1 and 2)
+
+Thursday April 20 2017
+1530-1930: Worked on user interface for application (modes 2 and 3)
+2130-2359: Worked on user interface for application (modes 3 and 4) and grid
+           detection algorithm.
+
+Friday April 21 2017
+2100-2359: Worked on grid detection algorithm.
+
+Saturday April 22 2017
+2030-2359: Worked on grid rotation algorithm and user-input grid corners.
+
+Monday April 24 2017
+1600-1830: Worked on MNIST neural network and saving numpy arrays of weights and
+           biases to file.
+2000-2359: Worked on implementing digit recognition by passing image through 
+           weights and biases, remainder of UI, checking of Sudoku grid by user,
+           and implementing solver into the UI.
+
+Wednesday April 26 2017
+1430-1700: Worked on implementing training on data gathered from the application
+           based on user input for the puzzles, using user input as labels.
+
+Friday April 28 2017
+1630-1900: Worked on fine-tuning grid detection and digit recognition 
+           algorithms by changing the parameters of the detection and running
+           empty squares through the neural network as samples of ‘0’s. Also
+           worked on improving the design of the UI.
+
+Saturday April 29 2017
+1230-1530: Worked on trying to create a LightsOut solver.
+2130-2359: Worked on solution steps algorithm.
+
+Sunday April 30 2017
+0000-0030: Worked on solution steps algorithm and fine tuning bugs in the UI.
+2200-2359: Worked on design documents and readme file. Also cleaned up code
+           documentation in the python backend files.
+
+Tuesday May 2 2017
+1600-1900: Worked on implementing solution explanations with noughts and crosses
+           and improving the UI based on user study.
+2030-2130: Worked on implementing 4x4 Sudoku solvers and documenting code.

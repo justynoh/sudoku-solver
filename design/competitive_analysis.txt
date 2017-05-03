@@ -1,0 +1,50 @@
+                               15112 Term Project
+                              Competitive Analysis
+————————————————————————————————————————————————————————————————————————————————
+
+1 - Online Sudoku Solvers
+
+    (a) Link: https://www.sudoku-solutions.com/
+    
+        As with most online solvers, this website is both an online Sudoku 
+        generator and solver. While this solver has much functionality - it is 
+        able to provide partial solution, checks and be constrained on puzzle-
+        solving algorithms - it is still disadvantaged in many ways that most 
+        online puzzles are.
+        
+        Firstly, online Sudoku puzzle solvers require the user to input numbers
+        manually into a given 9x9 grid of squares, which is a hassle and simply
+        putting the puzzle up to the camera can solve easily.
+        
+        Secondly, this specific solver can only solve 9x9 Sudoku grids, which is
+        not the intention of the solver that I intend to implement - my solver
+        should be able to detect and quickly solve 4x4, 9x9 and 16x16 grids.
+        While 25x25 grids are theoretically possible, in reality they take much
+        too long to solve without much more complex algorithms. This could be an
+        idea for further expansion if I have time.
+
+    (b) Link: http://sudoku-puzzles.merschat.com/
+        
+        This online solver is better than the last in the sense that it is able 
+        to 'solve' puzzles ranging from 9x9 to 25x25. However, it is 
+        fundamentally not solver because it cannot solve arbitrary puzzles - it 
+        can only generate puzzles and provide their corresponding solutions, 
+        which is a simple generation problem, not a solving problem.
+
+2 - Smartphone Camera Sudoku Solvers
+
+    (a) Link: http://thesmartphoneappreview.com/iphone/sudoku-solver-camera/
+    
+        This solver has a few advantages over online solvers which I would also
+        like to implement - it can detect Sudoku puzzles directly from the 
+        camera and read the digits accordingly. Even though the app purports to
+        not be able to read handwritten digits, and the author of the above
+        article mentioned that it was able to read handwritten digits, I intend
+        to implement a version that can read handwritten digits with a high
+        level of certainty in order to increase the flexibility of the 
+        application.
+        
+        Another good idea from this application is to have a bounding box
+        overlayed on the screen to ensure that the user knows to position the
+        puzzle upright and within the box, and also to increase the ease of
+        finding the puzzle and the corresponding digits.

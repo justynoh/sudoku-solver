@@ -1,0 +1,15 @@
+Image sources
+
+Sudoku: https://www.learn-sudoku.com/what-is-sudoku.html
+Crossword: http://rexwordpuzzle.blogspot.com/2012/12/1-alicia-keys-hit-of-2007-tue-12-18-12.html
+Battleships: https://en.wikipedia.org/wiki/Battleship_(puzzle)
+Kakuro: https://www.puzzlemix.com/Kakuro
+LightsOut: http://www.mobogenie.com/download-lights-out-puzzle-free-1501837.html
+Nurikabe: http://www.huttar.net/lars-kathy/puzzles/nurikabe.html
+Parks: https://solvemymaths.com/category/resources/starters/puzzles/
+Maze: http://katiemelhuish.com/posts/assignments/make-a-maze/
+ABC puzzle: http://www.kosbie.net/cmu/fall-12/15-112/handouts/hw10.html
+N queens: https://streamcomputing.eu/blog/2013-06-03/the-application-areas-opencl-can-be-used/
+Skyscrapers: http://www.conceptispuzzles.com/index.aspx?uri=puzzle/skyscrapers/rules
+Hashi: https://nedbatchelder.com/blog/200712/hashiwokakero.html
+Minesweeper: http://www.wikiwand.com/en/Puzzle_video_game

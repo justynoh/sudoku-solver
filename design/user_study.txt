@@ -1,0 +1,23 @@
+                               15112 Term Project
+                                   User Study
+————————————————————————————————————————————————————————————————————————————————
+
+Based on the user study, the following changes were suggested:
+
+ -  To put a “please hold still” or an “increase your brightness” message.
+ -  To put guesses (via backtracking) in a different color from the others when
+    showing the solutions.
+ -  To improve on the digit recognition.
+ -  To include the ability to recognize different size boards.
+ -  To move the buttons slightly higher.
+ -  To make the step of ‘changing the numbers’ more obvious that screen was for
+    that purpose.
+
+Implemented changes:
+
+ -  An “increase your brightness” message was put in.
+ -  Headings were included in each screen for clarity of purpose in general.
+
+Could be improved:
+
+ -  To give a 4x4 option in addition to the 9x9 option.

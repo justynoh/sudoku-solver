@@ -1,0 +1,72 @@
+                               15112 Term Project
+                                     Design
+————————————————————————————————————————————————————————————————————————————————
+
+1 - Introduction
+
+The problem this application intends to solve is the problem of problem-solving.
+In particular, there are two primary objectives:
+
+ - Grid and digit detection
+ - Sudoku puzzle solving
+
+2 - Approach
+
+    a - Grid and digit detection
+
+    To solve the grid detection problem, a Hough lines analysis method was used.
+    Based on the lines output by the Hough lines algorithm, the angle between 
+    all possible pairs of lines are computed and considers a grid to be detected
+    when the majority of lines are relatively perpendicular or parallel.
+
+    To solve the digit detection problem, tensorflow is used to initialize the
+    weights and biases based on the MNIST network. It saves the learned weights 
+    and biases as numpy arrays in a data file. However this may not be foolproof
+    and the source of puzzle that everyone solves may be different - they may be
+    typed, handwritten or printed. As such, the implementation of the neural 
+    network is customized so that if there already exists arrays in the data
+    file, every time a valid puzzle is solved, the network trains on the given
+    puzzle based on the digits confirmed/entered by the user. In this way, the
+    network parameters are customized to each user based on their usage of the 
+    application and the source of their puzzles.
+
+    The implementation of the neural network is as follows:
+    
+    Input layer: 784 nodes
+        (downscale by 4x)
+        Layer 1: 196 nodes with relu activator
+            (downscale by 4x)
+            Layer 2: 49 nodes with sigmoid activator and dropout
+                (downscale to one-hot size, approx. 5x)
+                Output layer: 10 nodes with softmax activator
+
+    b - Sudoku puzzle solving
+
+    To do Sudoku puzzle solving, three algorithms are used. 
+
+    The first algorithm is the singleton search algorithm, where for each empty
+    cell in the board, every possible choice (based on the current numbers in 
+    the row, column and box) is found and if there is only one possible number,
+    that number is put into the cell.
+
+    The second algorithm is the unique element algorithm, where for each row, 
+    column and box, all possible choices for each empty cell is found. If, 
+    within that row/column/box there is a number that only occurs once, then it
+    must go into that corresponding cell.
+
+    Before going on to the third algorithm, it should be noted that the solver
+    implementation used in this application goes through all possible cells that
+    can be solved by the above two algorithms until it is not possible. In this
+    case it turns to a last-resort algorithm.
+
+    The third (last-resort) algorithm is backtracking - it picks an empty cell, 
+    finds all possible choices that could go that cell based on the row, column
+    and box, and makes a guess. If the guess leads to a valid, solved puzzle,
+    it is treated as a solution. If not, it goes back and guesses another 
+    number.
+
+3 - User Interface
+
+The design of the user interface is based upon usability. In many online applications of sudoku solvers it is seen that users need to enter their sudoku
+puzzles on their own. However in this application, users simply need to hold the puzzle up to their camera and confirm that their puzzle is correct. This
+confirmation step is critical in ensuring that the digit recognition algorithm is correctly trained.

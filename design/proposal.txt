@@ -1,0 +1,54 @@
+                               15112 Term Project
+                                Project Proposal
+————————————————————————————————————————————————————————————————————————————————
+
+1 - Problem
+
+    Puzzle-solving is both and art and a science - even though a high level of 
+    critical thinking and knowledge of algorithms are required to solve complex 
+    puzzles, very often, creativity in terms of 'thinking out of the box' and 
+    viewing a problem in a different way is required to generate a solution.
+    
+    However, over the ages of man's quest to create and solve increasingly
+    difficult puzzles, some puzzles have remained as classics, while others have
+    been lost to the ticking of time. As a result, most types of puzzles that 
+    belong to the former category have been created, solved, analyzed and 
+    systematized to the point where learning set algorithms and techniques allow
+    us to easily solve such puzzles. In this manner, solving these puzzles is
+    simply a matter of applying algorithms to the problem - something that a 
+    machine could do.
+    
+    The goal of the project presented in this proposal is to solve such puzzles 
+    by allowing user to simply 'show' the physical (printed or handwritten) 
+    puzzle board to their computer via the camera, and for the device to output 
+    the solution to the puzzle.
+    
+    Of course, this does not take away from the excitement and thrill of doing
+    puzzles - for those so inclined, this tool could simply be used as a 
+    solution provision mechanism. For those less inclined towards puzzle solving
+    but are stuck in a situation in which they have no choice but to solve such 
+    a puzzle, this tool is a useful mechanism to quickly get the desired 
+    solution.
+
+2 - Solution
+
+    In order to solve the problem, algorithms can be implemented to solve Python
+    representations of these puzzles. Some examples of puzzles that could be
+    solved with such algorithms would be Sudoku, Battleships, Minesweeper and 
+    LightsOut.
+    
+    The UI can then be created, which would mainly be a screen capturing video
+    from the camera of the device, looking for the selected puzzle to solve.
+    Once detected, the puzzle can be translated into their corresponding Python
+    representations using digit recognition (in the case of puzzles such as
+    Sudoku and Minesweeper) or simple thresholding (in the case of puzzles such
+    as LightsOut).
+    
+    The solutions to these puzzles can then be output onto the screen of the
+    device.
+    
+3 - Technologies
+
+    --> OpenCV
+    --> Tensorflow
+    --> Numpy 
