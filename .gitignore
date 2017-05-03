@@ -103,3 +103,4 @@ data
 design/.DS_Store
 img/.DS_Store
 puzzlesolver/.DS_Store
+puzzlesolver/__pycache__
