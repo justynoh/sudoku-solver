@@ -40,6 +40,9 @@ def rotationAngle(horz,vert):
     toremove=len(thetas)//10
     thetas=thetas[toremove:-toremove]
     angle=sum(thetas)/len(thetas)
+    while not -math.pi/4<angle<math.pi/4:
+        if angle<0:angle+=math.pi/2
+        else:angle-=math.pi/2
     return angle
 
 def getRotationAngle(lines):

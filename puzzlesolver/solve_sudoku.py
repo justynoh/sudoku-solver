@@ -372,10 +372,13 @@ def nextChoice(s):
         If there are none, returns row,col=-1,-1.
     '''
     numchoices=s.getBoardChoicesNumber()
+    bestchoice,bestnum=(-1,-1),-1
     for row in range(len(numchoices)):
         for col in range(len(numchoices[row])):
-            if numchoices[row][col]>1: return row,col
-    return -1,-1
+            if numchoices[row][col]>bestnum:
+                bestchoice=(row,col)
+                bestnum=numchoices[row][col]
+    return bestchoice
 
 '''-----------------------------------------------------------------------------
 ------------------------------------SOLVER--------------------------------------

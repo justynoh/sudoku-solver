@@ -20,7 +20,7 @@ def getLines(frame,grey,bounds):
     x0,y0,x1,y1=bounds
     roi=grey[y0:y1,x0:x1]
     edges=cv2.Canny(roi,100,50,apertureSize=3)
-    lines=cv2.HoughLines(edges,1,math.pi/180,int((x1-x0)/4),np.array([]),0,0)
+    lines=cv2.HoughLines(edges,1,math.pi/180,7*(x1-x0)//24,np.array([]),0,0)
     return lines
 
 def getLinePoints(lines,bounds):
