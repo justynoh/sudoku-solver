@@ -14,6 +14,12 @@ application directory and run:
 
 $ python run.py
 
+During the first run, it will take some time to load - that is okay. The 
+application is training the neural network on the MNIST dataset and saving the 
+weights and biases to a local directory, which will be used to detect the digits
+in your puzzle. This will later be updated to fit the kind of Sudoku puzzles you
+typically solve - a neural network that is customized for you!
+
 # Dependencies
 
 This application runs on python 3.5.3 and uses the following packages:
